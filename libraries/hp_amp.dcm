@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP hp_amp
+D hp_amp
+K headphone amp
+$ENDCMP
+#
+#End Doc Library

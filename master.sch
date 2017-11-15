@@ -1,0 +1,482 @@
+EESchema Schematic File Version 2
+LIBS:main_board-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pin_headers
+LIBS:iso
+LIBS:RCA_conectors
+LIBS:riaa
+LIBS:cue
+LIBS:mixer
+LIBS:hp_amp
+LIBS:switches
+LIBS:main_board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 16
+Title ""
+Date "2017-10-02"
+Rev "Rev-A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3250 3450 0    60   Input ~ 0
+IN_R
+Text HLabel 3250 4650 0    60   Input ~ 0
+IN_L
+Text HLabel 1650 1250 0    60   Input ~ 0
+V+
+Text HLabel 1650 1900 0    60   Input ~ 0
+V-
+Text HLabel 8200 3700 2    60   Output ~ 0
+OUT_R
+Text HLabel 8200 4200 2    60   Output ~ 0
+OUT_L
+$Comp
+L NE5532 U701
+U 1 1 59DB85BE
+P 5250 3050
+F 0 "U701" H 5250 3250 50  0000 L CNN
+F 1 "NE5532" H 5250 2850 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5250 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/ne5532" H 5250 3050 50  0001 C CNN
+F 4 "NE5532P" H 5250 3050 60  0001 C CNN "Mfg_Part_No"
+F 5 "Operational Amplifiers - Op Amps Dual Low Noise" H 5250 3050 60  0001 C CNN "Description"
+F 6 "Texas Instruments" H 5250 3050 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 5250 3050 60  0001 C CNN "Distributor"
+F 8 "595-NE5532P" H 5250 3050 60  0001 C CNN "Distributor Part #"
+F 9 "PDIP-8" H 5250 3050 60  0001 C CNN "Package"
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+Text Label 2950 1900 0    60   ~ 0
+V-
+Text Label 5150 3950 2    60   ~ 0
+V+
+Text Label 5150 2750 2    60   ~ 0
+V+
+Text Label 5150 3350 2    60   ~ 0
+V-
+Text Label 5150 4550 2    60   ~ 0
+V-
+$Comp
+L R_Small R705
+U 1 1 59DB89C5
+P 5400 3450
+F 0 "R705" H 5430 3470 50  0000 L CNN
+F 1 "12K" H 5430 3410 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5400 3450 50  0001 C CNN
+F 3 "" H 5400 3450 50  0001 C CNN
+F 4 "0" H 5400 3450 60  0001 C CNN "Mfg_Part_No"
+F 5 "Digikey" H 5400 3450 60  0001 C CNN "Distributor"
+F 6 "0402" H 5400 3450 60  0001 C CNN "Package"
+	1    5400 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 59DB8CFD
+P 4550 2950
+F 0 "#PWR023" H 4550 2700 50  0001 C CNN
+F 1 "GND" H 4550 2800 50  0000 C CNN
+F 2 "" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 59DB8D3B
+P 4500 4150
+F 0 "#PWR024" H 4500 3900 50  0001 C CNN
+F 1 "GND" H 4500 4000 50  0000 C CNN
+F 2 "" H 4500 4150 50  0001 C CNN
+F 3 "" H 4500 4150 50  0001 C CNN
+	1    4500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C705
+U 1 1 59DB8F5D
+P 3600 3450
+F 0 "C705" H 3610 3520 50  0000 L CNN
+F 1 "22u" H 3610 3370 50  0000 L CNN
+F 2 "" H 3600 3450 50  0001 C CNN
+F 3 "" H 3600 3450 50  0001 C CNN
+F 4 "0" H 3600 3450 60  0001 C CNN "Mfg_Part_No"
+F 5 "Mouser" H 3600 3450 60  0001 C CNN "Distributor"
+F 6 "0402" H 3600 3450 60  0001 C CNN "Package"
+	1    3600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R703
+U 1 1 59DB9205
+P 4150 3450
+F 0 "R703" H 4180 3470 50  0000 L CNN
+F 1 "10K" H 4180 3410 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 4150 3450 50  0001 C CNN
+F 3 "" H 4150 3450 50  0001 C CNN
+F 4 "0" H 4150 3450 60  0001 C CNN "Mfg_Part_No"
+F 5 "Digikey" H 4150 3450 60  0001 C CNN "Distributor"
+F 6 "0402" H 4150 3450 60  0001 C CNN "Package"
+	1    4150 3450
+	0    1    1    0   
+$EndComp
+Text Label 5150 4550 2    60   ~ 0
+V-
+$Comp
+L R_Small R706
+U 1 1 59DB953F
+P 5400 4650
+F 0 "R706" H 5430 4670 50  0000 L CNN
+F 1 "12K" H 5430 4610 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5400 4650 50  0001 C CNN
+F 3 "" H 5400 4650 50  0001 C CNN
+F 4 "0" H 5400 4650 60  0001 C CNN "Mfg_Part_No"
+F 5 "Digikey" H 5400 4650 60  0001 C CNN "Distributor"
+F 6 "0402" H 5400 4650 60  0001 C CNN "Package"
+	1    5400 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C706
+U 1 1 59DB9549
+P 3600 4650
+F 0 "C706" H 3610 4720 50  0000 L CNN
+F 1 "22u" H 3610 4570 50  0000 L CNN
+F 2 "" H 3600 4650 50  0001 C CNN
+F 3 "" H 3600 4650 50  0001 C CNN
+F 4 "0" H 3600 4650 60  0001 C CNN "Mfg_Part_No"
+F 5 "Mouser" H 3600 4650 60  0001 C CNN "Distributor"
+F 6 "0402" H 3600 4650 60  0001 C CNN "Package"
+	1    3600 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R704
+U 1 1 59DB9550
+P 4150 4650
+F 0 "R704" H 4180 4670 50  0000 L CNN
+F 1 "10K" H 4180 4610 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 4150 4650 50  0001 C CNN
+F 3 "" H 4150 4650 50  0001 C CNN
+F 4 "0" H 4150 4650 60  0001 C CNN "Mfg_Part_No"
+F 5 "Digikey" H 4150 4650 60  0001 C CNN "Distributor"
+F 6 "0402" H 4150 4650 60  0001 C CNN "Package"
+	1    4150 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1900 1900 1900
+Wire Wire Line
+	3500 3450 3250 3450
+Wire Wire Line
+	3250 4650 3500 4650
+Wire Wire Line
+	7250 4200 7800 4200
+Wire Wire Line
+	7250 3700 7800 3700
+Wire Wire Line
+	4950 3150 4800 3150
+Wire Wire Line
+	4950 4350 4750 4350
+Wire Wire Line
+	5650 4250 5550 4250
+Wire Wire Line
+	4550 2950 4950 2950
+Wire Wire Line
+	4500 4150 4950 4150
+Wire Wire Line
+	6600 3700 7050 3700
+Wire Wire Line
+	6600 4200 7050 4200
+$Comp
+L POT_Dual RV701
+U 1 1 59DB8526
+P 6500 3950
+F 0 "RV701" H 6500 4100 50  0000 C CNN
+F 1 "22K" H 6500 4025 50  0000 C CNN
+F 2 "" H 6750 3875 50  0001 C CNN
+F 3 "" H 6750 3875 50  0001 C CNN
+	1    6500 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3450 4250 3450
+Wire Wire Line
+	4800 3150 4800 3450
+Connection ~ 4800 3450
+Wire Wire Line
+	4050 3450 3700 3450
+Wire Wire Line
+	3700 4650 4050 4650
+Wire Wire Line
+	4250 4650 5300 4650
+Wire Wire Line
+	5650 4650 5500 4650
+Wire Wire Line
+	4750 4350 4750 4650
+Connection ~ 4750 4650
+$Comp
+L CP_Small C707
+U 1 1 59DBABA3
+P 7150 3700
+F 0 "C707" H 7160 3770 50  0000 L CNN
+F 1 "4u7" H 7160 3620 50  0000 L CNN
+F 2 "" H 7150 3700 50  0001 C CNN
+F 3 "" H 7150 3700 50  0001 C CNN
+	1    7150 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP_Small C708
+U 1 1 59DBABE9
+P 7150 4200
+F 0 "C708" H 7160 4270 50  0000 L CNN
+F 1 "4u7" H 7160 4120 50  0000 L CNN
+F 2 "" H 7150 4200 50  0001 C CNN
+F 3 "" H 7150 4200 50  0001 C CNN
+	1    7150 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R707
+U 1 1 59DBAC2B
+P 7900 3700
+F 0 "R707" H 7930 3720 50  0000 L CNN
+F 1 "R_Small" H 7930 3660 50  0000 L CNN
+F 2 "" H 7900 3700 50  0001 C CNN
+F 3 "" H 7900 3700 50  0001 C CNN
+	1    7900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R708
+U 1 1 59DBAC6E
+P 7900 4200
+F 0 "R708" H 7930 4220 50  0000 L CNN
+F 1 "R_Small" H 7930 4160 50  0000 L CNN
+F 2 "" H 7900 4200 50  0001 C CNN
+F 3 "" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 4200 8200 4200
+Wire Wire Line
+	8200 3700 8000 3700
+Wire Wire Line
+	5650 4250 5650 4650
+Wire Wire Line
+	5550 3050 5700 3050
+Wire Wire Line
+	5700 3050 5700 3450
+Wire Wire Line
+	5700 3450 5500 3450
+Wire Wire Line
+	6400 3550 6400 3200
+Wire Wire Line
+	6400 3200 5700 3200
+Connection ~ 5700 3200
+Wire Wire Line
+	5650 4450 5950 4450
+Wire Wire Line
+	5950 4450 5950 4050
+Wire Wire Line
+	5950 4050 6400 4050
+Connection ~ 5650 4450
+$Comp
+L GND #PWR025
+U 1 1 59DBB7DF
+P 6400 3850
+F 0 "#PWR025" H 6400 3600 50  0001 C CNN
+F 1 "GND" H 6400 3700 50  0000 C CNN
+F 2 "" H 6400 3850 50  0001 C CNN
+F 3 "" H 6400 3850 50  0001 C CNN
+	1    6400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 59DBB81A
+P 6400 4350
+F 0 "#PWR026" H 6400 4100 50  0001 C CNN
+F 1 "GND" H 6400 4200 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R702
+U 1 1 59DBC180
+P 2000 1900
+F 0 "R702" H 2030 1920 50  0000 L CNN
+F 1 "100" H 2030 1860 50  0000 L CNN
+F 2 "" H 2000 1900 50  0001 C CNN
+F 3 "" H 2000 1900 50  0001 C CNN
+	1    2000 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C704
+U 1 1 59DBC1FC
+P 2700 2050
+F 0 "C704" H 2710 2120 50  0000 L CNN
+F 1 "47u" H 2710 1970 50  0000 L CNN
+F 2 "" H 2700 2050 50  0001 C CNN
+F 3 "" H 2700 2050 50  0001 C CNN
+	1    2700 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C702
+U 1 1 59DBC28D
+P 2450 2050
+F 0 "C702" H 2460 2120 50  0000 L CNN
+F 1 "100n" H 2460 1970 50  0000 L CNN
+F 2 "" H 2450 2050 50  0001 C CNN
+F 3 "" H 2450 2050 50  0001 C CNN
+	1    2450 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 59DBC3C0
+P 2450 2250
+F 0 "#PWR027" H 2450 2000 50  0001 C CNN
+F 1 "GND" H 2450 2100 50  0000 C CNN
+F 2 "" H 2450 2250 50  0001 C CNN
+F 3 "" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2250 2450 2150
+Wire Wire Line
+	2700 2150 2700 2200
+Wire Wire Line
+	2700 2200 2450 2200
+Connection ~ 2450 2200
+Wire Wire Line
+	2100 1900 2950 1900
+Wire Wire Line
+	2450 1900 2450 1950
+Wire Wire Line
+	2700 1900 2700 1950
+Connection ~ 2450 1900
+Connection ~ 2700 1900
+Wire Wire Line
+	1650 1250 1900 1250
+$Comp
+L R_Small R701
+U 1 1 59DBC623
+P 2000 1250
+F 0 "R701" H 2030 1270 50  0000 L CNN
+F 1 "100" H 2030 1210 50  0000 L CNN
+F 2 "" H 2000 1250 50  0001 C CNN
+F 3 "" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C703
+U 1 1 59DBC62A
+P 2700 1400
+F 0 "C703" H 2710 1470 50  0000 L CNN
+F 1 "47u" H 2710 1320 50  0000 L CNN
+F 2 "" H 2700 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0001 C CNN
+	1    2700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C701
+U 1 1 59DBC631
+P 2450 1400
+F 0 "C701" H 2460 1470 50  0000 L CNN
+F 1 "100n" H 2460 1320 50  0000 L CNN
+F 2 "" H 2450 1400 50  0001 C CNN
+F 3 "" H 2450 1400 50  0001 C CNN
+	1    2450 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 59DBC638
+P 2450 1600
+F 0 "#PWR028" H 2450 1350 50  0001 C CNN
+F 1 "GND" H 2450 1450 50  0000 C CNN
+F 2 "" H 2450 1600 50  0001 C CNN
+F 3 "" H 2450 1600 50  0001 C CNN
+	1    2450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1600 2450 1500
+Wire Wire Line
+	2700 1500 2700 1550
+Wire Wire Line
+	2700 1550 2450 1550
+Connection ~ 2450 1550
+Wire Wire Line
+	2100 1250 2950 1250
+Wire Wire Line
+	2450 1250 2450 1300
+Wire Wire Line
+	2700 1250 2700 1300
+Connection ~ 2450 1250
+Connection ~ 2700 1250
+Text Label 2950 1250 0    60   ~ 0
+V+
+$Comp
+L NE5532 U701
+U 2 1 59DBD446
+P 5250 4250
+F 0 "U701" H 5250 4450 50  0000 L CNN
+F 1 "NE5532" H 5250 4050 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5250 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/ne5532" H 5250 4250 50  0001 C CNN
+F 4 "NE5532P" H 5250 4250 60  0001 C CNN "Mfg_Part_No"
+F 5 "Operational Amplifiers - Op Amps Dual Low Noise" H 5250 4250 60  0001 C CNN "Description"
+F 6 "Texas Instruments" H 5250 4250 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 5250 4250 60  0001 C CNN "Distributor"
+F 8 "595-NE5532P" H 5250 4250 60  0001 C CNN "Distributor Part #"
+F 9 "PDIP-8" H 5250 4250 60  0001 C CNN "Package"
+	2    5250 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

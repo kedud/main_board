@@ -1,0 +1,739 @@
+EESchema Schematic File Version 2
+LIBS:main_board-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pin_headers
+LIBS:iso
+LIBS:RCA_conectors
+LIBS:riaa
+LIBS:cue
+LIBS:mixer
+LIBS:hp_amp
+LIBS:switches
+LIBS:main_board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 16
+Title "Rotary Table Main Board"
+Date "2017-10-02"
+Rev "Rev-A"
+Comp "D&D"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P102
+U 1 1 5730C7CE
+P 1650 2300
+F 0 "P102" H 1650 2500 50  0000 C CNN
+F 1 "CONN_01X03" V 1750 2300 50  0000 C CNN
+F 2 "Pin_Headers_Female:Pin_Header_Straight_Female_1x03_Pitch2.54mm" H 1650 2300 50  0001 C CNN
+F 3 "" H 1650 2300 50  0000 C CNN
+	1    1650 2300
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 2200 3350 1500 700 
+U 57315E18
+F0 "preamp_1" 60
+F1 "preamp.sch" 60
+F2 "Right_input" I L 2200 3650 60 
+F3 "V+" I L 2200 3850 60 
+F4 "V-" I L 2200 3950 60 
+F5 "Left_input" I L 2200 3450 60 
+F6 "Right_output" O R 3700 3450 60 
+F7 "Left_output" O R 3700 3650 60 
+$EndSheet
+$Sheet
+S 8800 5850 1200 1500
+U 57315E4C
+F0 "mixer" 60
+F1 "mixer.sch" 60
+F2 "IN1_R" I L 8800 6000 60 
+F3 "IN1_L" I L 8800 6100 60 
+F4 "IN2_R" I L 8800 6300 60 
+F5 "IN2_L" I L 8800 6400 60 
+F6 "IN3_R" I L 8800 6600 60 
+F7 "IN3_L" I L 8800 6700 60 
+F8 "IN4_R" I L 8800 6900 60 
+F9 "IN4_L" I L 8800 7000 60 
+F10 "V+" I L 8800 7200 60 
+F11 "V-" I L 8800 7300 60 
+F12 "OUT_R" O R 10000 6400 60 
+F13 "OUT_L" O R 10000 6500 60 
+$EndSheet
+$Sheet
+S 8800 2550 1200 1500
+U 57315E50
+F0 "cue" 60
+F1 "cue.sch" 60
+F2 "IN1_R" I L 8800 2700 60 
+F3 "IN1_L" I L 8800 2800 60 
+F4 "IN2_R" I L 8800 3000 60 
+F5 "IN2_L" I L 8800 3100 60 
+F6 "IN3_R" I L 8800 3300 60 
+F7 "IN3_L" I L 8800 3400 60 
+F8 "IN4_R" I L 8800 3600 60 
+F9 "IN4_L" I L 8800 3700 60 
+F10 "V+" I L 8800 3900 60 
+F11 "V-" I L 8800 4000 60 
+F12 "CUE_R" O R 10000 3200 60 
+F13 "CUE_L" O R 10000 3300 60 
+$EndSheet
+$Sheet
+S 6400 4300 1250 1600
+U 57315E6C
+F0 "baxandall" 60
+F1 "baxandall.sch" 60
+F2 "IN1_R" I L 6400 4450 60 
+F3 "IN1_L" I L 6400 4550 60 
+F4 "OUT1_L" O R 7650 4550 60 
+F5 "OUT1_R" O R 7650 4450 60 
+F6 "IN2_R" I L 6400 4750 60 
+F7 "IN2_L" I L 6400 4850 60 
+F8 "OUT2_L" O R 7650 4850 60 
+F9 "OUT2_R" O R 7650 4750 60 
+F10 "IN3_R" I L 6400 5050 60 
+F11 "IN3_L" I L 6400 5150 60 
+F12 "OUT3_L" O R 7650 5150 60 
+F13 "OUT3_R" O R 7650 5050 60 
+F14 "IN4_R" I L 6400 5350 60 
+F15 "IN4_L" I L 6400 5450 60 
+F16 "OUT4_L" O R 7650 5450 60 
+F17 "OUT4_R" O R 7650 5350 60 
+F18 "V+" I L 6400 5650 60 
+F19 "V-" I L 6400 5750 60 
+$EndSheet
+$Sheet
+S 8800 4550 1200 800 
+U 57315E70
+F0 "isolateur" 60
+F1 "isolator.sch" 60
+F2 "IN_L" I L 8800 4900 60 
+F3 "IN_R" I L 8800 4800 60 
+F4 "V+" I L 8800 5100 60 
+F5 "V-" I L 8800 5200 60 
+F6 "OUT_R" O R 10000 4800 60 
+F7 "OUT_L" O R 10000 4900 60 
+$EndSheet
+$Sheet
+S 11400 3050 1300 1700
+U 57315E74
+F0 "master" 60
+F1 "master.sch" 60
+F2 "IN_R" I L 11400 3350 60 
+F3 "IN_L" I L 11400 3450 60 
+F4 "V+" I L 11400 3850 60 
+F5 "V-" I L 11400 3950 60 
+F6 "OUT_R" O R 12700 3650 60 
+F7 "OUT_L" O R 12700 3750 60 
+$EndSheet
+$Sheet
+S 11400 5150 1300 1950
+U 57315E78
+F0 "headphone_preamp" 60
+F1 "headphone_preamp.sch" 60
+F2 "V+" I L 11400 6400 60 
+F3 "V-" I L 11400 6500 60 
+F4 "OUT_L" O R 12700 5950 60 
+F5 "OUT_R" O R 12700 6050 60 
+F6 "MIX_IN_L" I L 11400 5500 60 
+F7 "MIX_IN_R" I L 11400 5600 60 
+F8 "CUE_IN_L" I L 11400 5800 60 
+F9 "CUE_IN_R" I L 11400 5900 60 
+$EndSheet
+Text Label 2300 2200 0    60   ~ 0
+V+
+Text Label 2300 2400 0    60   ~ 0
+V-
+Wire Wire Line
+	2300 2400 1850 2400
+Wire Wire Line
+	1850 2200 2300 2200
+$Comp
+L GND #PWR01
+U 1 1 57315F0C
+P 2600 2300
+F 0 "#PWR01" H 2600 2050 50  0001 C CNN
+F 1 "GND" H 2600 2150 50  0000 C CNN
+F 2 "" H 2600 2300 50  0000 C CNN
+F 3 "" H 2600 2300 50  0000 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2300 1850 2300
+Text Label 2050 3850 2    60   ~ 0
+V+
+Text Label 2050 3950 2    60   ~ 0
+V-
+Wire Wire Line
+	2050 3850 2200 3850
+Wire Wire Line
+	2200 3950 2050 3950
+Wire Wire Line
+	1700 3450 2200 3450
+$Comp
+L GND #PWR02
+U 1 1 5731D638
+P 1700 3600
+F 0 "#PWR02" H 1700 3350 50  0001 C CNN
+F 1 "GND" H 1850 3550 50  0000 C CNN
+F 2 "" H 1700 3600 50  0000 C CNN
+F 3 "" H 1700 3600 50  0000 C CNN
+	1    1700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3650 2050 3750
+Wire Wire Line
+	2050 3650 2200 3650
+$Sheet
+S 2200 4300 1500 700 
+U 5731E166
+F0 "preamp_2" 60
+F1 "preamp.sch" 60
+F2 "Right_input" I L 2200 4400 60 
+F3 "V+" I L 2200 4800 60 
+F4 "V-" I L 2200 4900 60 
+F5 "Left_input" I L 2200 4600 60 
+F6 "Right_output" O R 3700 4400 60 
+F7 "Left_output" O R 3700 4600 60 
+$EndSheet
+Text Label 2050 4800 2    60   ~ 0
+V+
+Text Label 2050 4900 2    60   ~ 0
+V-
+Wire Wire Line
+	2050 4800 2200 4800
+Wire Wire Line
+	2200 4900 2050 4900
+Wire Wire Line
+	1700 4400 2200 4400
+Wire Wire Line
+	2050 4600 2050 4700
+Wire Wire Line
+	2050 4600 2200 4600
+$Sheet
+S 2200 5250 1500 700 
+U 5731E412
+F0 "preamp_3" 60
+F1 "preamp.sch" 60
+F2 "Right_input" I L 2200 5550 60 
+F3 "V+" I L 2200 5750 60 
+F4 "V-" I L 2200 5850 60 
+F5 "Left_input" I L 2200 5350 60 
+F6 "Right_output" O R 3700 5350 60 
+F7 "Left_output" O R 3700 5550 60 
+$EndSheet
+Text Label 2050 5750 2    60   ~ 0
+V+
+Text Label 2050 5850 2    60   ~ 0
+V-
+Wire Wire Line
+	2050 5750 2200 5750
+Wire Wire Line
+	2200 5850 2050 5850
+Wire Wire Line
+	1700 5350 2200 5350
+Wire Wire Line
+	2050 5550 2050 5650
+Wire Wire Line
+	2050 5550 2200 5550
+$Sheet
+S 2200 6200 1500 700 
+U 5731E6A6
+F0 "preamp_4" 60
+F1 "preamp.sch" 60
+F2 "Right_input" I L 2200 6500 60 
+F3 "V+" I L 2200 6700 60 
+F4 "V-" I L 2200 6800 60 
+F5 "Left_input" I L 2200 6300 60 
+F6 "Right_output" O R 3700 6300 60 
+F7 "Left_output" O R 3700 6500 60 
+$EndSheet
+Text Label 2050 6700 2    60   ~ 0
+V+
+Text Label 2050 6800 2    60   ~ 0
+V-
+Wire Wire Line
+	2050 6700 2200 6700
+Wire Wire Line
+	2200 6800 2050 6800
+Wire Wire Line
+	1700 6300 2200 6300
+$Comp
+L GND #PWR03
+U 1 1 5731E6D1
+P 1700 6450
+F 0 "#PWR03" H 1700 6200 50  0001 C CNN
+F 1 "GND" H 1850 6400 50  0000 C CNN
+F 2 "" H 1700 6450 50  0000 C CNN
+F 3 "" H 1700 6450 50  0000 C CNN
+	1    1700 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6500 2050 6600
+Wire Wire Line
+	2050 6500 2200 6500
+Text Label 3700 3450 0    60   ~ 0
+PO1_R
+Text Label 3700 3650 0    60   ~ 0
+PO1_L
+Text Label 3700 4400 0    60   ~ 0
+PO2_R
+Text Label 3700 4600 0    60   ~ 0
+PO2_L
+Text Label 3700 6300 0    60   ~ 0
+PO4_R
+Text Label 3700 6500 0    60   ~ 0
+PO4_L
+Text Label 6400 5650 2    60   ~ 0
+V+
+Text Label 6400 5750 2    60   ~ 0
+V-
+Text Label 7650 4450 0    60   ~ 0
+BO1_R
+Text Label 7650 4550 0    60   ~ 0
+BO1_L
+Text Label 7650 4750 0    60   ~ 0
+BO2_R
+Text Label 7650 4850 0    60   ~ 0
+BO2_L
+Text Label 7650 5050 0    60   ~ 0
+BO3_R
+Text Label 7650 5150 0    60   ~ 0
+BO3_L
+Text Label 7650 5350 0    60   ~ 0
+BO4_R
+Text Label 7650 5450 0    60   ~ 0
+BO4_L
+Text Label 8800 2700 2    60   ~ 0
+BO1_R
+Text Label 8800 2800 2    60   ~ 0
+BO1_L
+Text Label 8800 3000 2    60   ~ 0
+BO2_R
+Text Label 8800 3100 2    60   ~ 0
+BO2_L
+Text Label 8800 3300 2    60   ~ 0
+BO3_R
+Text Label 8800 3400 2    60   ~ 0
+BO3_L
+Text Label 8800 3600 2    60   ~ 0
+BO4_R
+Text Label 8800 3700 2    60   ~ 0
+BO4_L
+Text Label 8800 6000 2    60   ~ 0
+BO1_R
+Text Label 8800 6100 2    60   ~ 0
+BO1_L
+Text Label 8800 6300 2    60   ~ 0
+BO2_R
+Text Label 8800 6400 2    60   ~ 0
+BO2_L
+Text Label 8800 6600 2    60   ~ 0
+BO3_R
+Text Label 8800 6700 2    60   ~ 0
+BO3_L
+Text Label 8800 6900 2    60   ~ 0
+BO4_R
+Text Label 8800 7000 2    60   ~ 0
+BO4_L
+Text Label 8800 7200 2    60   ~ 0
+V+
+Text Label 8800 7300 2    60   ~ 0
+V-
+Text Label 8800 3900 2    60   ~ 0
+V+
+Text Label 8800 4000 2    60   ~ 0
+V-
+Text Label 8800 5100 2    60   ~ 0
+V+
+Text Label 8800 5200 2    60   ~ 0
+V-
+Text Label 10000 3200 0    60   ~ 0
+CUE_OUT_R
+Text Label 10000 3300 0    60   ~ 0
+CUE_OUT_L
+Text Label 10000 6400 0    60   ~ 0
+MIX_OUT_R
+Text Label 10000 6500 0    60   ~ 0
+MIX_OUT_L
+Text Label 8800 4800 2    60   ~ 0
+MIX_OUT_R
+Text Label 8800 4900 2    60   ~ 0
+MIX_OUT_L
+Text Label 10000 4800 0    60   ~ 0
+ISO_OUT_R
+Text Label 10000 4900 0    60   ~ 0
+ISO_OUT_L
+Text Label 11400 3850 2    60   ~ 0
+V+
+Text Label 11400 3950 2    60   ~ 0
+V-
+Text Label 11400 3350 2    60   ~ 0
+ISO_OUT_R
+Text Label 11400 3450 2    60   ~ 0
+ISO_OUT_L
+Text Label 11400 5500 2    60   ~ 0
+MIX_OUT_L
+Text Label 11400 5600 2    60   ~ 0
+MIX_OUT_R
+Text Label 11400 5800 2    60   ~ 0
+CUE_OUT_L
+Text Label 11400 5900 2    60   ~ 0
+CUE_OUT_R
+Text Label 11400 6400 2    60   ~ 0
+V+
+Text Label 11400 6500 2    60   ~ 0
+V-
+Wire Wire Line
+	12900 5950 12700 5950
+Wire Wire Line
+	12700 6050 12900 6050
+Wire Wire Line
+	12700 3650 13100 3650
+Wire Wire Line
+	12700 3750 13100 3750
+$Comp
+L GND #PWR04
+U 1 1 576973F8
+P 14400 4000
+F 0 "#PWR04" H 14400 3750 50  0001 C CNN
+F 1 "GND" H 14400 3850 50  0000 C CNN
+F 2 "" H 14400 4000 50  0000 C CNN
+F 3 "" H 14400 4000 50  0000 C CNN
+	1    14400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3750 1700 3750
+$Comp
+L GND #PWR05
+U 1 1 5731E191
+P 1700 4550
+F 0 "#PWR05" H 1700 4300 50  0001 C CNN
+F 1 "GND" H 1850 4500 50  0000 C CNN
+F 2 "" H 1700 4550 50  0000 C CNN
+F 3 "" H 1700 4550 50  0000 C CNN
+	1    1700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4700 1700 4700
+$Comp
+L GND #PWR06
+U 1 1 59D14D5E
+P 1700 5500
+F 0 "#PWR06" H 1700 5250 50  0001 C CNN
+F 1 "GND" H 1850 5450 50  0000 C CNN
+F 2 "" H 1700 5500 50  0001 C CNN
+F 3 "" H 1700 5500 50  0001 C CNN
+	1    1700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5650 1700 5650
+Wire Wire Line
+	2050 6600 1700 6600
+$Comp
+L Conn_Coaxial_x2 J101
+U 1 1 59D3A0EC
+P 14400 3700
+F 0 "J101" H 14400 3925 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" V 14515 3700 50  0000 C CNN
+F 2 "RCA_Connectors:PJRAS1X2S01AUX" H 14400 3600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras1x2s__x_series_cd-9138.pdf" H 14400 3600 50  0001 C CNN
+F 4 "PJRAS1X2S01AUX" H 14400 3700 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors 2 POS RA PHONO JACK" H 14400 3700 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 14400 3700 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 14400 3700 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS1X2S01AUX" H 14400 3700 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 14400 3700 60  0001 C CNN "Package"
+	1    14400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 6150 12900 6150
+$Comp
+L GND #PWR07
+U 1 1 57696329
+P 12800 6150
+F 0 "#PWR07" H 12800 5900 50  0001 C CNN
+F 1 "GND" H 12800 6000 50  0000 C CNN
+F 2 "" H 12800 6150 50  0000 C CNN
+F 3 "" H 12800 6150 50  0000 C CNN
+	1    12800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P103
+U 1 1 5769ACB7
+P 13100 6050
+F 0 "P103" H 13100 6250 50  0000 C CNN
+F 1 "HP_OUT_CONN_01X03" V 13200 6050 50  0000 C CNN
+F 2 "Pin_Headers_Female:Pin_Header_Straight_Female_1x03_Pitch2.54mm" H 13100 6050 50  0001 C CNN
+F 3 "" H 13100 6050 50  0000 C CNN
+	1    13100 6050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 13850 4500 1150 1200
+U 59D3A322
+F0 "symetriseur" 60
+F1 "symetriseur.sch" 60
+F2 "IN_R" I L 13850 4750 60 
+F3 "IN_L" I L 13850 4950 60 
+$EndSheet
+Wire Wire Line
+	13100 3650 13100 3600
+Wire Wire Line
+	13100 3600 14250 3600
+Wire Wire Line
+	13100 3750 13100 3800
+Wire Wire Line
+	13100 3800 14250 3800
+Text Label 13300 3600 0    60   ~ 0
+ASYM_OUT_R
+Text Label 13300 3800 0    60   ~ 0
+ASYM_OUT_L
+Text Label 13750 4750 2    60   ~ 0
+ASYM_OUT_R
+Text Label 13750 4950 2    60   ~ 0
+ASYM_OUT_L
+Wire Wire Line
+	13850 4950 13750 4950
+Wire Wire Line
+	13750 4750 13850 4750
+$Comp
+L PJRAS4X2U01AUX P101
+U 1 1 59D453C0
+P 1350 3600
+F 0 "P101" H 1350 3950 60  0000 C CNN
+F 1 "PJRAS4X2U01AUX" H 1350 4050 60  0000 C CNN
+F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 2500 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 2650 60  0001 C CNN
+F 4 "0402" H 1350 2400 60  0001 C CNN "Package"
+F 5 "502-PJRAS4X2U01AUX" H 1350 2750 60  0001 C CNN "Distributor Part #"
+F 6 "Mouser" H 1350 2850 60  0001 C CNN "Distributor"
+F 7 "PJRAS4X2U01AUX" H 1350 3150 60  0001 C CNN "Mfg_Part_No"
+F 8 "RCA Phono Connectors PHONO JACK" H 1350 2950 60  0001 C CNN "Description"
+F 9 "Switchcraft" H 1350 3050 60  0001 C CNN "Manufacturer"
+	1    1350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PJRAS4X2U01AUX P101
+U 2 1 59D45F99
+P 1350 4550
+F 0 "P101" H 1350 4900 60  0000 C CNN
+F 1 "PJRAS4X2U01AUX" H 1350 5000 60  0000 C CNN
+F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 3450 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 3600 60  0001 C CNN
+F 4 "0402" H 1350 3350 60  0001 C CNN "Package"
+F 5 "502-PJRAS4X2U01AUX" H 1350 3700 60  0001 C CNN "Distributor Part #"
+F 6 "Mouser" H 1350 3800 60  0001 C CNN "Distributor"
+F 7 "PJRAS4X2U01AUX" H 1350 4100 60  0001 C CNN "Mfg_Part_No"
+F 8 "RCA Phono Connectors PHONO JACK" H 1350 3900 60  0001 C CNN "Description"
+F 9 "Switchcraft" H 1350 4000 60  0001 C CNN "Manufacturer"
+	2    1350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PJRAS4X2U01AUX P101
+U 3 1 59D46309
+P 1350 5500
+F 0 "P101" H 1350 5850 60  0000 C CNN
+F 1 "PJRAS4X2U01AUX" H 1350 5950 60  0000 C CNN
+F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 4400 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 4550 60  0001 C CNN
+F 4 "0402" H 1350 4300 60  0001 C CNN "Package"
+F 5 "502-PJRAS4X2U01AUX" H 1350 4650 60  0001 C CNN "Distributor Part #"
+F 6 "Mouser" H 1350 4750 60  0001 C CNN "Distributor"
+F 7 "PJRAS4X2U01AUX" H 1350 5050 60  0001 C CNN "Mfg_Part_No"
+F 8 "RCA Phono Connectors PHONO JACK" H 1350 4850 60  0001 C CNN "Description"
+F 9 "Switchcraft" H 1350 4950 60  0001 C CNN "Manufacturer"
+	3    1350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PJRAS4X2U01AUX P101
+U 4 1 59D46AAA
+P 1350 6450
+F 0 "P101" H 1350 6800 60  0000 C CNN
+F 1 "PJRAS4X2U01AUX" H 1350 6900 60  0000 C CNN
+F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 5350 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 5500 60  0001 C CNN
+F 4 "0402" H 1350 5250 60  0001 C CNN "Package"
+F 5 "502-PJRAS4X2U01AUX" H 1350 5600 60  0001 C CNN "Distributor Part #"
+F 6 "Mouser" H 1350 5700 60  0001 C CNN "Distributor"
+F 7 "PJRAS4X2U01AUX" H 1350 6000 60  0001 C CNN "Mfg_Part_No"
+F 8 "RCA Phono Connectors PHONO JACK" H 1350 5800 60  0001 C CNN "Description"
+F 9 "Switchcraft" H 1350 5900 60  0001 C CNN "Manufacturer"
+	4    1350 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 2850 13900 2850
+Wire Wire Line
+	13900 2850 13900 3600
+Connection ~ 13900 3600
+Wire Wire Line
+	14000 3800 14000 3050
+Wire Wire Line
+	14000 3050 14250 3050
+Connection ~ 14000 3800
+$Comp
+L Conn_Coaxial_x2 J102
+U 1 1 59EB9C1C
+P 14400 2950
+F 0 "J102" H 14400 3175 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" V 14515 2950 50  0000 C CNN
+F 2 "RCA_Connectors:PJRAS1X2S01AUX" H 14400 2850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/393/pjras1x2s__x_series_cd-9138.pdf" H 14400 2850 50  0001 C CNN
+F 4 "PJRAS1X2S01AUX" H 14400 2950 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors 2 POS RA PHONO JACK" H 14400 2950 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 14400 2950 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 14400 2950 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS1X2S01AUX" H 14400 2950 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 14400 2950 60  0001 C CNN "Package"
+	1    14400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59EBB8C0
+P 14400 3250
+F 0 "#PWR08" H 14400 3000 50  0001 C CNN
+F 1 "GND" H 14400 3100 50  0000 C CNN
+F 2 "" H 14400 3250 50  0000 C CNN
+F 3 "" H 14400 3250 50  0000 C CNN
+	1    14400 3250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4700 3350 750  700 
+U 59F61C67
+F0 "trim_1" 60
+F1 "trim.sch" 60
+F2 "IN_R" I L 4700 3450 60 
+F3 "IN_L" I L 4700 3650 60 
+F4 "OUT_R" O R 5450 3450 60 
+F5 "OUT_L" O R 5450 3650 60 
+$EndSheet
+$Sheet
+S 4700 4300 750  700 
+U 59F664FB
+F0 "trim_2" 60
+F1 "trim.sch" 60
+F2 "IN_R" I L 4700 4400 60 
+F3 "IN_L" I L 4700 4600 60 
+F4 "OUT_R" O R 5450 4400 60 
+F5 "OUT_L" O R 5450 4600 60 
+$EndSheet
+Text Label 3700 5550 0    60   ~ 0
+PO3_L
+Text Label 3700 5350 0    60   ~ 0
+PO3_R
+Text Label 4700 3450 2    60   ~ 0
+PO1_R
+Text Label 4700 3650 2    60   ~ 0
+PO1_L
+Text Label 4700 4400 2    60   ~ 0
+PO2_R
+Text Label 4700 4600 2    60   ~ 0
+PO2_L
+$Sheet
+S 4700 5250 750  700 
+U 59F6E045
+F0 "trim_3" 60
+F1 "trim.sch" 60
+F2 "IN_R" I L 4700 5350 60 
+F3 "IN_L" I L 4700 5550 60 
+F4 "OUT_R" O R 5450 5350 60 
+F5 "OUT_L" O R 5450 5550 60 
+$EndSheet
+Text Label 4700 5350 2    60   ~ 0
+PO3_R
+Text Label 4700 5550 2    60   ~ 0
+PO3_L
+$Sheet
+S 4700 6200 750  700 
+U 59F6EC3D
+F0 "trim_4" 60
+F1 "trim.sch" 60
+F2 "IN_R" I L 4700 6300 60 
+F3 "IN_L" I L 4700 6500 60 
+F4 "OUT_R" O R 5450 6300 60 
+F5 "OUT_L" O R 5450 6500 60 
+$EndSheet
+Text Label 4700 6300 2    60   ~ 0
+PO4_R
+Text Label 4700 6500 2    60   ~ 0
+PO4_L
+Text Label 5450 3450 0    60   ~ 0
+TO1_R
+Text Label 5450 3650 0    60   ~ 0
+TO1_L
+Text Label 6400 4450 2    60   ~ 0
+TO1_R
+Text Label 6400 4550 2    60   ~ 0
+TO1_L
+Text Label 5450 4400 0    60   ~ 0
+TO2_R
+Text Label 5450 4600 0    60   ~ 0
+TO2_L
+Text Label 5450 5550 0    60   ~ 0
+TO3_L
+Text Label 5450 6500 0    60   ~ 0
+TO4_L
+Text Label 5450 6300 0    60   ~ 0
+TO4_R
+Text Label 5450 5350 0    60   ~ 0
+TO3_R
+Text Label 6400 4750 2    60   ~ 0
+TO2_R
+Text Label 6400 4850 2    60   ~ 0
+TO2_L
+Text Label 6400 5050 2    60   ~ 0
+TO3_R
+Text Label 6400 5150 2    60   ~ 0
+TO3_L
+Text Label 6400 5350 2    60   ~ 0
+TO4_R
+Text Label 6400 5450 2    60   ~ 0
+TO4_L
+$EndSCHEMATC
