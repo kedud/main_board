@@ -43,10 +43,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 16
-Title ""
+Title "RM4 main board"
 Date "2017-10-02"
 Rev "Rev-A"
-Comp ""
+Comp "D&D"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -101,10 +101,10 @@ Wire Wire Line
 Wire Wire Line
 	6450 3600 6600 3600
 $Comp
-L GND #PWR015
+L GND #PWR016
 U 1 1 5731FC7A
 P 4550 3000
-F 0 "#PWR015" H 4550 2750 50  0001 C CNN
+F 0 "#PWR016" H 4550 2750 50  0001 C CNN
 F 1 "GND" H 4550 2850 50  0000 C CNN
 F 2 "" H 4550 3000 50  0000 C CNN
 F 3 "" H 4550 3000 50  0000 C CNN

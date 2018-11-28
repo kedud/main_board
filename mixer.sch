@@ -43,10 +43,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 16
-Title ""
+Title "RM4 main board"
 Date "2017-10-02"
 Rev "Rev-A"
-Comp ""
+Comp "D&D"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -89,10 +89,10 @@ V+
 Text HLabel 5300 3300 0    60   Input ~ 0
 V-
 $Comp
-L GND #PWR014
+L GND #PWR015
 U 1 1 5732A0DA
 P 4800 3200
-F 0 "#PWR014" H 4800 2950 50  0001 C CNN
+F 0 "#PWR015" H 4800 2950 50  0001 C CNN
 F 1 "GND" H 4800 3050 50  0000 C CNN
 F 2 "" H 4800 3200 50  0000 C CNN
 F 3 "" H 4800 3200 50  0000 C CNN

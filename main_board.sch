@@ -43,7 +43,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 16
-Title "Rotary Table Main Board"
+Title "RM4 main board"
 Date "2017-10-02"
 Rev "Rev-A"
 Comp "D&D"
@@ -52,17 +52,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_01X03 P102
-U 1 1 5730C7CE
-P 1650 2300
-F 0 "P102" H 1650 2500 50  0000 C CNN
-F 1 "CONN_01X03" V 1750 2300 50  0000 C CNN
-F 2 "Pin_Headers_Female:Pin_Header_Straight_Female_1x03_Pitch2.54mm" H 1650 2300 50  0001 C CNN
-F 3 "" H 1650 2300 50  0000 C CNN
-	1    1650 2300
-	-1   0    0    1   
-$EndComp
 $Sheet
 S 2200 3350 1500 700 
 U 57315E18
@@ -173,37 +162,25 @@ F7 "MIX_IN_R" I L 11400 5600 60
 F8 "CUE_IN_L" I L 11400 5800 60 
 F9 "CUE_IN_R" I L 11400 5900 60 
 $EndSheet
-Text Label 2300 2200 0    60   ~ 0
+Text Label 2300 1350 0    60   ~ 0
 V+
-Text Label 2300 2400 0    60   ~ 0
+Text Label 2300 1550 0    60   ~ 0
 V-
-Wire Wire Line
-	2300 2400 1850 2400
-Wire Wire Line
-	1850 2200 2300 2200
 $Comp
 L GND #PWR01
 U 1 1 57315F0C
-P 2600 2300
-F 0 "#PWR01" H 2600 2050 50  0001 C CNN
-F 1 "GND" H 2600 2150 50  0000 C CNN
-F 2 "" H 2600 2300 50  0000 C CNN
-F 3 "" H 2600 2300 50  0000 C CNN
-	1    2600 2300
+P 2600 1450
+F 0 "#PWR01" H 2600 1200 50  0001 C CNN
+F 1 "GND" H 2600 1300 50  0000 C CNN
+F 2 "" H 2600 1450 50  0000 C CNN
+F 3 "" H 2600 1450 50  0000 C CNN
+	1    2600 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 2300 1850 2300
 Text Label 2050 3850 2    60   ~ 0
 V+
 Text Label 2050 3950 2    60   ~ 0
 V-
-Wire Wire Line
-	2050 3850 2200 3850
-Wire Wire Line
-	2200 3950 2050 3950
-Wire Wire Line
-	1700 3450 2200 3450
 $Comp
 L GND #PWR02
 U 1 1 5731D638
@@ -215,19 +192,15 @@ F 3 "" H 1700 3600 50  0000 C CNN
 	1    1700 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 3650 2050 3750
-Wire Wire Line
-	2050 3650 2200 3650
 $Sheet
 S 2200 4300 1500 700 
 U 5731E166
 F0 "preamp_2" 60
 F1 "preamp.sch" 60
-F2 "Right_input" I L 2200 4400 60 
+F2 "Right_input" I L 2200 4600 60 
 F3 "V+" I L 2200 4800 60 
 F4 "V-" I L 2200 4900 60 
-F5 "Left_input" I L 2200 4600 60 
+F5 "Left_input" I L 2200 4400 60 
 F6 "Right_output" O R 3700 4400 60 
 F7 "Left_output" O R 3700 4600 60 
 $EndSheet
@@ -235,16 +208,6 @@ Text Label 2050 4800 2    60   ~ 0
 V+
 Text Label 2050 4900 2    60   ~ 0
 V-
-Wire Wire Line
-	2050 4800 2200 4800
-Wire Wire Line
-	2200 4900 2050 4900
-Wire Wire Line
-	1700 4400 2200 4400
-Wire Wire Line
-	2050 4600 2050 4700
-Wire Wire Line
-	2050 4600 2200 4600
 $Sheet
 S 2200 5250 1500 700 
 U 5731E412
@@ -261,16 +224,6 @@ Text Label 2050 5750 2    60   ~ 0
 V+
 Text Label 2050 5850 2    60   ~ 0
 V-
-Wire Wire Line
-	2050 5750 2200 5750
-Wire Wire Line
-	2200 5850 2050 5850
-Wire Wire Line
-	1700 5350 2200 5350
-Wire Wire Line
-	2050 5550 2050 5650
-Wire Wire Line
-	2050 5550 2200 5550
 $Sheet
 S 2200 6200 1500 700 
 U 5731E6A6
@@ -287,12 +240,6 @@ Text Label 2050 6700 2    60   ~ 0
 V+
 Text Label 2050 6800 2    60   ~ 0
 V-
-Wire Wire Line
-	2050 6700 2200 6700
-Wire Wire Line
-	2200 6800 2050 6800
-Wire Wire Line
-	1700 6300 2200 6300
 $Comp
 L GND #PWR03
 U 1 1 5731E6D1
@@ -304,21 +251,17 @@ F 3 "" H 1700 6450 50  0000 C CNN
 	1    1700 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 6500 2050 6600
-Wire Wire Line
-	2050 6500 2200 6500
-Text Label 3700 3450 0    60   ~ 0
+Text Label 4050 3450 2    60   ~ 0
 PO1_R
-Text Label 3700 3650 0    60   ~ 0
+Text Label 4050 3650 2    60   ~ 0
 PO1_L
-Text Label 3700 4400 0    60   ~ 0
+Text Label 4050 4400 2    60   ~ 0
 PO2_R
-Text Label 3700 4600 0    60   ~ 0
+Text Label 4050 4600 2    60   ~ 0
 PO2_L
-Text Label 3700 6300 0    60   ~ 0
+Text Label 4050 6300 2    60   ~ 0
 PO4_R
-Text Label 3700 6500 0    60   ~ 0
+Text Label 4050 6500 2    60   ~ 0
 PO4_L
 Text Label 6400 5650 2    60   ~ 0
 V+
@@ -420,14 +363,6 @@ Text Label 11400 6400 2    60   ~ 0
 V+
 Text Label 11400 6500 2    60   ~ 0
 V-
-Wire Wire Line
-	12900 5950 12700 5950
-Wire Wire Line
-	12700 6050 12900 6050
-Wire Wire Line
-	12700 3650 13100 3650
-Wire Wire Line
-	12700 3750 13100 3750
 $Comp
 L GND #PWR04
 U 1 1 576973F8
@@ -439,8 +374,6 @@ F 3 "" H 14400 4000 50  0000 C CNN
 	1    14400 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 3750 1700 3750
 $Comp
 L GND #PWR05
 U 1 1 5731E191
@@ -452,8 +385,6 @@ F 3 "" H 1700 4550 50  0000 C CNN
 	1    1700 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 4700 1700 4700
 $Comp
 L GND #PWR06
 U 1 1 59D14D5E
@@ -465,10 +396,6 @@ F 3 "" H 1700 5500 50  0001 C CNN
 	1    1700 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 5650 1700 5650
-Wire Wire Line
-	2050 6600 1700 6600
 $Comp
 L Conn_Coaxial_x2 J101
 U 1 1 59D3A0EC
@@ -486,8 +413,6 @@ F 9 "0402" H 14400 3700 60  0001 C CNN "Package"
 	1    14400 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12800 6150 12900 6150
 $Comp
 L GND #PWR07
 U 1 1 57696329
@@ -499,17 +424,6 @@ F 3 "" H 12800 6150 50  0000 C CNN
 	1    12800 6150
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X03 P103
-U 1 1 5769ACB7
-P 13100 6050
-F 0 "P103" H 13100 6250 50  0000 C CNN
-F 1 "HP_OUT_CONN_01X03" V 13200 6050 50  0000 C CNN
-F 2 "Pin_Headers_Female:Pin_Header_Straight_Female_1x03_Pitch2.54mm" H 13100 6050 50  0001 C CNN
-F 3 "" H 13100 6050 50  0000 C CNN
-	1    13100 6050
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 13850 4500 1150 1200
 U 59D3A322
@@ -518,14 +432,6 @@ F1 "symetriseur.sch" 60
 F2 "IN_R" I L 13850 4750 60 
 F3 "IN_L" I L 13850 4950 60 
 $EndSheet
-Wire Wire Line
-	13100 3650 13100 3600
-Wire Wire Line
-	13100 3600 14250 3600
-Wire Wire Line
-	13100 3750 13100 3800
-Wire Wire Line
-	13100 3800 14250 3800
 Text Label 13300 3600 0    60   ~ 0
 ASYM_OUT_R
 Text Label 13300 3800 0    60   ~ 0
@@ -534,88 +440,78 @@ Text Label 13750 4750 2    60   ~ 0
 ASYM_OUT_R
 Text Label 13750 4950 2    60   ~ 0
 ASYM_OUT_L
-Wire Wire Line
-	13850 4950 13750 4950
-Wire Wire Line
-	13750 4750 13850 4750
 $Comp
 L PJRAS4X2U01AUX P101
-U 1 1 59D453C0
+U 4 1 59D453C0
 P 1350 3600
 F 0 "P101" H 1350 3950 60  0000 C CNN
 F 1 "PJRAS4X2U01AUX" H 1350 4050 60  0000 C CNN
 F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 2500 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 2650 60  0001 C CNN
-F 4 "0402" H 1350 2400 60  0001 C CNN "Package"
-F 5 "502-PJRAS4X2U01AUX" H 1350 2750 60  0001 C CNN "Distributor Part #"
-F 6 "Mouser" H 1350 2850 60  0001 C CNN "Distributor"
-F 7 "PJRAS4X2U01AUX" H 1350 3150 60  0001 C CNN "Mfg_Part_No"
-F 8 "RCA Phono Connectors PHONO JACK" H 1350 2950 60  0001 C CNN "Description"
-F 9 "Switchcraft" H 1350 3050 60  0001 C CNN "Manufacturer"
-	1    1350 3600
+F 4 "PJRAS4X2U01AUX" H 1350 3150 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors PHONO JACK" H 1350 2950 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 1350 3050 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 1350 2850 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS4X2U01AUX" H 1350 2750 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 1350 2400 60  0001 C CNN "Package"
+F 10 "PJRAS4X2U01AUX" H 1350 3600 60  0001 C CNN "Mfg_part_#"
+	4    1350 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L PJRAS4X2U01AUX P101
-U 2 1 59D45F99
+U 3 1 59D45F99
 P 1350 4550
 F 0 "P101" H 1350 4900 60  0000 C CNN
 F 1 "PJRAS4X2U01AUX" H 1350 5000 60  0000 C CNN
 F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 3450 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 3600 60  0001 C CNN
-F 4 "0402" H 1350 3350 60  0001 C CNN "Package"
-F 5 "502-PJRAS4X2U01AUX" H 1350 3700 60  0001 C CNN "Distributor Part #"
-F 6 "Mouser" H 1350 3800 60  0001 C CNN "Distributor"
-F 7 "PJRAS4X2U01AUX" H 1350 4100 60  0001 C CNN "Mfg_Part_No"
-F 8 "RCA Phono Connectors PHONO JACK" H 1350 3900 60  0001 C CNN "Description"
-F 9 "Switchcraft" H 1350 4000 60  0001 C CNN "Manufacturer"
-	2    1350 4550
+F 4 "PJRAS4X2U01AUX" H 1350 4100 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors PHONO JACK" H 1350 3900 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 1350 4000 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 1350 3800 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS4X2U01AUX" H 1350 3700 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 1350 3350 60  0001 C CNN "Package"
+F 10 "PJRAS4X2U01AUX" H 1350 4550 60  0001 C CNN "Mfg_part_#"
+	3    1350 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L PJRAS4X2U01AUX P101
-U 3 1 59D46309
+U 2 1 59D46309
 P 1350 5500
 F 0 "P101" H 1350 5850 60  0000 C CNN
 F 1 "PJRAS4X2U01AUX" H 1350 5950 60  0000 C CNN
 F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 4400 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 4550 60  0001 C CNN
-F 4 "0402" H 1350 4300 60  0001 C CNN "Package"
-F 5 "502-PJRAS4X2U01AUX" H 1350 4650 60  0001 C CNN "Distributor Part #"
-F 6 "Mouser" H 1350 4750 60  0001 C CNN "Distributor"
-F 7 "PJRAS4X2U01AUX" H 1350 5050 60  0001 C CNN "Mfg_Part_No"
-F 8 "RCA Phono Connectors PHONO JACK" H 1350 4850 60  0001 C CNN "Description"
-F 9 "Switchcraft" H 1350 4950 60  0001 C CNN "Manufacturer"
-	3    1350 5500
+F 4 "PJRAS4X2U01AUX" H 1350 5050 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors PHONO JACK" H 1350 4850 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 1350 4950 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 1350 4750 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS4X2U01AUX" H 1350 4650 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 1350 4300 60  0001 C CNN "Package"
+F 10 "PJRAS4X2U01AUX" H 1350 5500 60  0001 C CNN "Mfg_part_#"
+	2    1350 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L PJRAS4X2U01AUX P101
-U 4 1 59D46AAA
+U 1 1 59D46AAA
 P 1350 6450
 F 0 "P101" H 1350 6800 60  0000 C CNN
 F 1 "PJRAS4X2U01AUX" H 1350 6900 60  0000 C CNN
 F 2 "RCA_Connectors:PJRAS4X2U01AUX" H 1350 5350 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/393/pjras4x2u__x_series_cd-476171.pdf" H 1350 5500 60  0001 C CNN
-F 4 "0402" H 1350 5250 60  0001 C CNN "Package"
-F 5 "502-PJRAS4X2U01AUX" H 1350 5600 60  0001 C CNN "Distributor Part #"
-F 6 "Mouser" H 1350 5700 60  0001 C CNN "Distributor"
-F 7 "PJRAS4X2U01AUX" H 1350 6000 60  0001 C CNN "Mfg_Part_No"
-F 8 "RCA Phono Connectors PHONO JACK" H 1350 5800 60  0001 C CNN "Description"
-F 9 "Switchcraft" H 1350 5900 60  0001 C CNN "Manufacturer"
-	4    1350 6450
+F 4 "PJRAS4X2U01AUX" H 1350 6000 60  0001 C CNN "Mfg_Part_No"
+F 5 "RCA Phono Connectors PHONO JACK" H 1350 5800 60  0001 C CNN "Description"
+F 6 "Switchcraft" H 1350 5900 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 1350 5700 60  0001 C CNN "Distributor"
+F 8 "502-PJRAS4X2U01AUX" H 1350 5600 60  0001 C CNN "Distributor Part #"
+F 9 "0402" H 1350 5250 60  0001 C CNN "Package"
+F 10 "PJRAS4X2U01AUX" H 1350 6450 60  0001 C CNN "Mfg_part_#"
+	1    1350 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14250 2850 13900 2850
-Wire Wire Line
-	13900 2850 13900 3600
-Connection ~ 13900 3600
-Wire Wire Line
-	14000 3800 14000 3050
-Wire Wire Line
-	14000 3050 14250 3050
-Connection ~ 14000 3800
 $Comp
 L Conn_Coaxial_x2 J102
 U 1 1 59EB9C1C
@@ -664,17 +560,17 @@ F3 "IN_L" I L 4700 4600 60
 F4 "OUT_R" O R 5450 4400 60 
 F5 "OUT_L" O R 5450 4600 60 
 $EndSheet
-Text Label 3700 5550 0    60   ~ 0
+Text Label 4050 5550 2    60   ~ 0
 PO3_L
-Text Label 3700 5350 0    60   ~ 0
+Text Label 4050 5350 2    60   ~ 0
 PO3_R
-Text Label 4700 3450 2    60   ~ 0
+Text Label 4350 3450 0    60   ~ 0
 PO1_R
-Text Label 4700 3650 2    60   ~ 0
+Text Label 4350 3650 0    60   ~ 0
 PO1_L
-Text Label 4700 4400 2    60   ~ 0
+Text Label 4350 4400 0    60   ~ 0
 PO2_R
-Text Label 4700 4600 2    60   ~ 0
+Text Label 4350 4600 0    60   ~ 0
 PO2_L
 $Sheet
 S 4700 5250 750  700 
@@ -686,9 +582,9 @@ F3 "IN_L" I L 4700 5550 60
 F4 "OUT_R" O R 5450 5350 60 
 F5 "OUT_L" O R 5450 5550 60 
 $EndSheet
-Text Label 4700 5350 2    60   ~ 0
+Text Label 4350 5350 0    60   ~ 0
 PO3_R
-Text Label 4700 5550 2    60   ~ 0
+Text Label 4350 5550 0    60   ~ 0
 PO3_L
 $Sheet
 S 4700 6200 750  700 
@@ -700,29 +596,29 @@ F3 "IN_L" I L 4700 6500 60
 F4 "OUT_R" O R 5450 6300 60 
 F5 "OUT_L" O R 5450 6500 60 
 $EndSheet
-Text Label 4700 6300 2    60   ~ 0
+Text Label 4350 6300 0    60   ~ 0
 PO4_R
-Text Label 4700 6500 2    60   ~ 0
+Text Label 4350 6500 0    60   ~ 0
 PO4_L
-Text Label 5450 3450 0    60   ~ 0
+Text Label 5800 3450 2    60   ~ 0
 TO1_R
-Text Label 5450 3650 0    60   ~ 0
+Text Label 5800 3650 2    60   ~ 0
 TO1_L
 Text Label 6400 4450 2    60   ~ 0
 TO1_R
 Text Label 6400 4550 2    60   ~ 0
 TO1_L
-Text Label 5450 4400 0    60   ~ 0
+Text Label 5800 4400 2    60   ~ 0
 TO2_R
-Text Label 5450 4600 0    60   ~ 0
+Text Label 5800 4600 2    60   ~ 0
 TO2_L
-Text Label 5450 5550 0    60   ~ 0
+Text Label 5800 5550 2    60   ~ 0
 TO3_L
-Text Label 5450 6500 0    60   ~ 0
+Text Label 5800 6500 2    60   ~ 0
 TO4_L
-Text Label 5450 6300 0    60   ~ 0
+Text Label 5800 6300 2    60   ~ 0
 TO4_R
-Text Label 5450 5350 0    60   ~ 0
+Text Label 5800 5350 2    60   ~ 0
 TO3_R
 Text Label 6400 4750 2    60   ~ 0
 TO2_R
@@ -736,4 +632,227 @@ Text Label 6400 5350 2    60   ~ 0
 TO4_R
 Text Label 6400 5450 2    60   ~ 0
 TO4_L
+Text Notes 1250 2050 0    60   ~ 0
+Power input\nMale Molex locking header\nshould be connected to a panel-mount DIN connector
+Wire Wire Line
+	2300 1550 1850 1550
+Wire Wire Line
+	1850 1350 2300 1350
+Wire Wire Line
+	2600 1450 1850 1450
+Wire Wire Line
+	2050 3850 2200 3850
+Wire Wire Line
+	2200 3950 2050 3950
+Wire Wire Line
+	1700 3450 2200 3450
+Wire Wire Line
+	2050 3650 2050 3750
+Wire Wire Line
+	2050 3650 2200 3650
+Wire Wire Line
+	2050 4800 2200 4800
+Wire Wire Line
+	2200 4900 2050 4900
+Wire Wire Line
+	1700 4400 2200 4400
+Wire Wire Line
+	2050 4600 2050 4700
+Wire Wire Line
+	2050 4600 2200 4600
+Wire Wire Line
+	2050 5750 2200 5750
+Wire Wire Line
+	2200 5850 2050 5850
+Wire Wire Line
+	1700 5350 2200 5350
+Wire Wire Line
+	2050 5550 2050 5650
+Wire Wire Line
+	2050 5550 2200 5550
+Wire Wire Line
+	2050 6700 2200 6700
+Wire Wire Line
+	2200 6800 2050 6800
+Wire Wire Line
+	1700 6300 2200 6300
+Wire Wire Line
+	2050 6500 2050 6600
+Wire Wire Line
+	2050 6500 2200 6500
+Wire Wire Line
+	12900 5950 12700 5950
+Wire Wire Line
+	12700 6050 12900 6050
+Wire Wire Line
+	12700 3650 13100 3650
+Wire Wire Line
+	12700 3750 13100 3750
+Wire Wire Line
+	2050 3750 1700 3750
+Wire Wire Line
+	2050 4700 1700 4700
+Wire Wire Line
+	2050 5650 1700 5650
+Wire Wire Line
+	2050 6600 1700 6600
+Wire Wire Line
+	12800 6150 12900 6150
+Wire Wire Line
+	13100 3650 13100 3600
+Wire Wire Line
+	13100 3600 14250 3600
+Wire Wire Line
+	13100 3750 13100 3800
+Wire Wire Line
+	13100 3800 14250 3800
+Wire Wire Line
+	13850 4950 13750 4950
+Wire Wire Line
+	13750 4750 13850 4750
+Wire Wire Line
+	14250 2850 13900 2850
+Wire Wire Line
+	13900 2850 13900 3600
+Connection ~ 13900 3600
+Wire Wire Line
+	14000 3800 14000 3050
+Wire Wire Line
+	14000 3050 14250 3050
+Connection ~ 14000 3800
+Wire Notes Line
+	1050 1050 4000 1050
+Wire Notes Line
+	4000 1050 4000 2150
+Wire Notes Line
+	4000 2150 1050 2150
+Wire Notes Line
+	1050 2150 1050 1050
+Wire Wire Line
+	4050 3650 3700 3650
+Wire Wire Line
+	4050 3450 3700 3450
+Wire Wire Line
+	4050 4400 3700 4400
+Wire Wire Line
+	4050 4600 3700 4600
+Wire Wire Line
+	4050 5550 3700 5550
+Wire Wire Line
+	4050 5350 3700 5350
+Wire Wire Line
+	4050 6300 3700 6300
+Wire Wire Line
+	4050 6500 3700 6500
+Wire Wire Line
+	4700 3450 4350 3450
+Wire Wire Line
+	4350 3650 4700 3650
+Wire Wire Line
+	4700 4400 4350 4400
+Wire Wire Line
+	4350 4600 4700 4600
+Wire Wire Line
+	4700 5350 4350 5350
+Wire Wire Line
+	4700 6300 4350 6300
+Wire Wire Line
+	4700 6500 4350 6500
+Wire Wire Line
+	4700 5550 4350 5550
+Wire Wire Line
+	5800 4600 5450 4600
+Wire Wire Line
+	5800 4400 5450 4400
+Wire Wire Line
+	5800 3650 5450 3650
+Wire Wire Line
+	5450 3450 5800 3450
+Wire Wire Line
+	5800 6500 5450 6500
+Wire Wire Line
+	5800 6300 5450 6300
+Wire Wire Line
+	5450 5550 5800 5550
+Wire Wire Line
+	5800 5350 5450 5350
+$Comp
+L Conn_01x03_Male J105
+U 1 1 5C00861A
+P 13400 4150
+F 0 "J105" H 13400 4350 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 13400 3950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 13400 4150 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/276/0038006293_PCB_HEADERS-159826.pdf" H 13400 4150 50  0001 C CNN
+F 4 "38-00-6293" H 13400 4150 60  0001 C CNN "Mfg_Part_No"
+F 5 "Embases et logements de câbles 2.54mm KK Hdr Vt VrC r Vt VrC FL 5Sn 3Ckt" H 13400 4150 60  0001 C CNN "Description"
+F 6 "Molex" H 13400 4150 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 13400 4150 60  0001 C CNN "Distributor"
+F 8 "538-38-00-6293" H 13400 4150 60  0001 C CNN "Distributor Part #"
+F 9 "3 THT" H 13400 4150 60  0001 C CNN "Package"
+F 10 "38-00-6293" H 13400 4150 60  0001 C CNN "Mfg_part_#"
+	1    13400 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13200 4050 13000 4050
+Wire Wire Line
+	13000 4050 13000 3650
+Connection ~ 13000 3650
+Wire Wire Line
+	12900 3750 12900 4150
+Wire Wire Line
+	12900 4150 13200 4150
+Connection ~ 12900 3750
+$Comp
+L GND #PWR09
+U 1 1 5C0093BC
+P 13050 4300
+F 0 "#PWR09" H 13050 4050 50  0001 C CNN
+F 1 "GND" H 13050 4150 50  0000 C CNN
+F 2 "" H 13050 4300 50  0001 C CNN
+F 3 "" H 13050 4300 50  0001 C CNN
+	1    13050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 4300 13050 4250
+Wire Wire Line
+	13050 4250 13200 4250
+$Comp
+L Conn_01x03_Male J104
+U 1 1 5C00A76E
+P 13100 6050
+F 0 "J104" H 13100 6250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 12900 5850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 13100 6050 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/276/0038006293_PCB_HEADERS-159826.pdf" H 13100 6050 50  0001 C CNN
+F 4 "38-00-6293" H 13100 6050 60  0001 C CNN "Mfg_Part_No"
+F 5 "Embases et logements de câbles 2.54mm KK Hdr Vt VrC r Vt VrC FL 5Sn 3Ckt" H 13100 6050 60  0001 C CNN "Description"
+F 6 "Molex" H 13100 6050 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 13100 6050 60  0001 C CNN "Distributor"
+F 8 "538-38-00-6293" H 13100 6050 60  0001 C CNN "Distributor Part #"
+F 9 "3 THT" H 13100 6050 60  0001 C CNN "Package"
+F 10 "38-00-6293" H 13100 6050 60  0001 C CNN "Mfg_part_#"
+	1    13100 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03_Male J103
+U 1 1 5C01A21D
+P 1650 1450
+F 0 "J103" H 1650 1650 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1450 1250 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 1650 1450 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/276/0038006293_PCB_HEADERS-159826.pdf" H 1650 1450 50  0001 C CNN
+F 4 "38-00-6293" H 1650 1450 60  0001 C CNN "Mfg_Part_No"
+F 5 "Embases et logements de câbles 2.54mm KK Hdr Vt VrC r Vt VrC FL 5Sn 3Ckt" H 1650 1450 60  0001 C CNN "Description"
+F 6 "Molex" H 1650 1450 60  0001 C CNN "Manufacturer"
+F 7 "Mouser" H 1650 1450 60  0001 C CNN "Distributor"
+F 8 "538-38-00-6293" H 1650 1450 60  0001 C CNN "Distributor Part #"
+F 9 "3 THT" H 1650 1450 60  0001 C CNN "Package"
+F 10 "38-00-6293" H 1650 1450 60  0001 C CNN "Mfg_part_#"
+	1    1650 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
